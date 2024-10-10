@@ -44,6 +44,13 @@
 	{{- if not $server }}
 		{{ template "_internal/google_analytics.html" . }}
 	{{- end }}
+
+    {{if hugo.IsProduction }}
+    {{ with .Site.Params.adsense.id }}
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1494649960951277" crossorigin="anonymous"></script>
+    {{ end }}
+    {{ end }}
+
 </head>
 <body class="body">
 	<div class="container container--outer">
