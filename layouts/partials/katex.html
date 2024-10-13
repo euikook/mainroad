@@ -18,7 +18,8 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" 
     integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg==" 
     crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
+    referrerpolicy="no-referrer"
+	onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});"></script>
 
 <script 
     src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" 
@@ -43,15 +44,3 @@
     integrity="sha512-00wlaC3R5NHYadba2vO4nvedHHF84SUks+d46OpbwxjtfDS2boPwrFLwgOU5PDo2rYlqZAM2y3dOQohEXSho+w==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer"></script>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
